@@ -1,0 +1,6 @@
+framework module Pods_PNA_SwiftTests {
+  umbrella header "Pods-PNA-SwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
