@@ -28,6 +28,10 @@
 		A1FF5954208B841E00092D63 /* UtilsKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5952208B841E00092D63 /* UtilsKeychain.swift */; };
 		A1FF595C208B8BA500092D63 /* UtilsCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF595B208B8BA400092D63 /* UtilsCoreData.swift */; };
 		A1FF595E208B8EA800092D63 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF595D208B8EA800092D63 /* DownloadService.swift */; };
+		A1FF5960208B912400092D63 /* PrevViewControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF595F208B912400092D63 /* PrevViewControllerSegue.swift */; };
+		A1FF5962208B91BB00092D63 /* UtilsPhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5961208B91BB00092D63 /* UtilsPhotoGallery.swift */; };
+		A1FF5964208B92E200092D63 /* UtilsDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5963208B92E200092D63 /* UtilsDateTime.swift */; };
+		A1FF5966208B935100092D63 /* UtilsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5965208B935000092D63 /* UtilsValidation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		A1FF5958208B880400092D63 /* PNA-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNA-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		A1FF595B208B8BA400092D63 /* UtilsCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsCoreData.swift; sourceTree = "<group>"; };
 		A1FF595D208B8EA800092D63 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		A1FF595F208B912400092D63 /* PrevViewControllerSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrevViewControllerSegue.swift; sourceTree = "<group>"; };
+		A1FF5961208B91BB00092D63 /* UtilsPhotoGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsPhotoGallery.swift; sourceTree = "<group>"; };
+		A1FF5963208B92E200092D63 /* UtilsDateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsDateTime.swift; sourceTree = "<group>"; };
+		A1FF5965208B935000092D63 /* UtilsValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsValidation.swift; sourceTree = "<group>"; };
 		B31FA5D51079B11C086DF623 /* Pods-PNA-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-Swift/Pods-PNA-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		BB4CEEBFF371F37A578E7999 /* Pods-PNA-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-SwiftTests/Pods-PNA-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDBD7F523F0D4B2AE58CF521 /* Pods-PNA-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-Swift/Pods-PNA-Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				A1FF5958208B880400092D63 /* PNA-Swift-Bridging-Header.h */,
+				A1FF5961208B91BB00092D63 /* UtilsPhotoGallery.swift */,
+				A1FF5965208B935000092D63 /* UtilsValidation.swift */,
+				A1FF5963208B92E200092D63 /* UtilsDateTime.swift */,
 				668AAB3D2088A9FB00509094 /* UtilsFont.swift */,
 				668AAB3F2088AAAE00509094 /* UtilsDatabase.swift */,
 				668AAB392088A95A00509094 /* UtilsPlatform.swift */,
@@ -230,6 +241,7 @@
 		A1FB7F0620864CED00024C33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A1FF595F208B912400092D63 /* PrevViewControllerSegue.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -577,11 +589,15 @@
 				A1FF595C208B8BA500092D63 /* UtilsCoreData.swift in Sources */,
 				668AAB382088A91400509094 /* UtilsLog.swift in Sources */,
 				A1FB7ED220864C5700024C33 /* ViewController.swift in Sources */,
+				A1FF5964208B92E200092D63 /* UtilsDateTime.swift in Sources */,
+				A1FF5960208B912400092D63 /* PrevViewControllerSegue.swift in Sources */,
 				A1FF595E208B8EA800092D63 /* DownloadService.swift in Sources */,
 				A1FB7ED820864C5700024C33 /* PNA_Swift.xcdatamodeld in Sources */,
 				668AAB402088AAAF00509094 /* UtilsDatabase.swift in Sources */,
+				A1FF5966208B935100092D63 /* UtilsValidation.swift in Sources */,
 				A1FF5953208B841E00092D63 /* UtilsCrypto.swift in Sources */,
 				A1FB7ED020864C5700024C33 /* AppDelegate.swift in Sources */,
+				A1FF5962208B91BB00092D63 /* UtilsPhotoGallery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
