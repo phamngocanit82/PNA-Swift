@@ -39,10 +39,10 @@ PODS:
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.20):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
   - FirebaseMessaging (2.2.0):
@@ -60,8 +60,8 @@ PODS:
   - GoogleMaps/Maps (2.6.0):
     - GoogleMaps/Base
   - GoogleSignIn (4.1.2):
-    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
-    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
     - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
   - GoogleSymbolUtilities (1.1.2)
@@ -74,13 +74,13 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3):
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
     - GoogleToolboxForMac/DebugUtils (= 2.1.3)
     - GoogleToolboxForMac/Defines (= 2.1.3)
-    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
-  - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
   - GoogleUtilities (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GTMOAuth2 (1.1.6):
@@ -119,6 +119,7 @@ PODS:
     - SQLCipher/common
   - SSZipArchive (2.1.2)
   - Starscream (3.0.5)
+  - SWRevealViewController (2.3.0)
   - THLabel (1.4.8)
   - TKRubberPageControl (1.4.0)
   - Toast-Swift (3.0.1)
@@ -154,6 +155,7 @@ DEPENDENCIES:
   - Socket.IO-Client-Swift
   - SQLCipher
   - SSZipArchive
+  - SWRevealViewController
   - THLabel
   - TKRubberPageControl
   - Toast-Swift
@@ -162,6 +164,58 @@ DEPENDENCIES:
   - TVButton
   - XCDYouTubeKit
   - ZoomTransitioning
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AESCrypt
+    - AFNetworking
+    - Alamofire
+    - Bolts
+    - CircleMenu
+    - DGActivityIndicatorView
+    - ESPullToRefresh
+    - FAPanels
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - FloatRatingView
+    - GDataXML-HTML
+    - GoogleAnalytics
+    - GoogleMaps
+    - GoogleSignIn
+    - GoogleSymbolUtilities
+    - GoogleTagManager
+    - GoogleToolboxForMac
+    - GoogleUtilities
+    - GTMOAuth2
+    - GTMSessionFetcher
+    - HTPullToRefresh
+    - InstagramKit
+    - KDCalendar
+    - LTMorphingLabel
+    - nanopb
+    - NSHash
+    - Protobuf
+    - RAMAnimatedTabBarController
+    - RQShineLabel
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - SQLCipher
+    - SSZipArchive
+    - Starscream
+    - SWRevealViewController
+    - THLabel
+    - TKRubberPageControl
+    - Toast-Swift
+    - TOMSMorphingLabel
+    - TouchJSON
+    - TVButton
+    - XCDYouTubeKit
+    - ZoomTransitioning
 
 SPEC CHECKSUMS:
   AESCrypt: 1d89bf8b0789cf274ab2205ea461adbe9321d5f8
@@ -204,6 +258,7 @@ SPEC CHECKSUMS:
   SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SSZipArchive: d4009d2ce5520a421f231fd97028cc0e2667eed8
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
   THLabel: a2ca21c06cd7daba5c0c6d3095d48f6c137a3d80
   TKRubberPageControl: 579f73c96568e5de86b3cd22402094037a79d9c3
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
@@ -213,6 +268,6 @@ SPEC CHECKSUMS:
   XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
   ZoomTransitioning: 42d9ad29c83d896f3fe28c324a4fe98ac821f0dd
 
-PODFILE CHECKSUM: 1b77e7bdbc3b9daca588ab342babc64555177a61
+PODFILE CHECKSUM: 39f283a656d165bc9e8a532e0558419c89f769aa
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

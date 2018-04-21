@@ -1,18 +1,18 @@
 import UIKit
-class LibFont: NSObject {
-    static let sharedInstance : LibFont = {
-        let inst = LibFont()
+class UtilsFont: NSObject {
+    static let sharedInstance : UtilsFont = {
+        let inst = UtilsFont()
         return inst
     }()
     func changeFont(_ control: AnyObject) {
         if (control is UILabel) {
             let lbl: UILabel? = (control as? UILabel)
-            lbl?.font = UIFont(name: LibFont.sharedInstance.fontName(), size: (lbl?.font.pointSize)!)
+            lbl?.font = UIFont(name: UtilsFont.sharedInstance.fontName(), size: (lbl?.font.pointSize)!)
             return
         }
         if (control is UIButton) {
             let btn: UIButton? = (control as? UIButton)
-            btn?.titleLabel?.font = UIFont(name: LibFont.sharedInstance.fontName(), size: (btn?.titleLabel?.font.pointSize)!)
+            btn?.titleLabel?.font = UIFont(name: UtilsFont.sharedInstance.fontName(), size: (btn?.titleLabel?.font.pointSize)!)
             return
         }
         if (control is UITextField) {
@@ -26,7 +26,7 @@ class LibFont: NSObject {
             return
         }
         for ctr: UIControl in control.subviews as! [UIControl] {
-            LibFont.sharedInstance.changeFont(ctr)
+            UtilsFont.sharedInstance.changeFont(ctr)
         }
     }
     func fontName() -> String {

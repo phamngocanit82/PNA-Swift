@@ -1,5 +1,5 @@
 import Foundation
-public class LibLog: NSObject{
+public class UtilsLog: NSObject{
     class func log(_ object: Any, message strMessage: Any) {
         print("\(String(describing: type(of: object))) \(strMessage)")
     }

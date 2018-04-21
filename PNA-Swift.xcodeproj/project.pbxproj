@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		2A22D0AEF429859B18BA37A4 /* Pods_PNA_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC79E0DC23C0FF98B1E6B89 /* Pods_PNA_Swift.framework */; };
 		486BBA24D9FA255EBA453AC8 /* Pods_PNA_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8623D6DA79CE0ED6DC405E39 /* Pods_PNA_SwiftTests.framework */; };
-		668AAB382088A91400509094 /* LibLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB372088A91400509094 /* LibLog.swift */; };
-		668AAB3A2088A95A00509094 /* LibPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB392088A95A00509094 /* LibPlatform.swift */; };
+		668AAB382088A91400509094 /* UtilsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB372088A91400509094 /* UtilsLog.swift */; };
+		668AAB3A2088A95A00509094 /* UtilsPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB392088A95A00509094 /* UtilsPlatform.swift */; };
 		668AAB3C2088A9A600509094 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668AAB3B2088A9A500509094 /* UserNotifications.framework */; };
-		668AAB3E2088A9FB00509094 /* LibFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB3D2088A9FB00509094 /* LibFont.swift */; };
-		668AAB402088AAAF00509094 /* LibDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB3F2088AAAE00509094 /* LibDatabase.swift */; };
+		668AAB3E2088A9FB00509094 /* UtilsFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB3D2088A9FB00509094 /* UtilsFont.swift */; };
+		668AAB402088AAAF00509094 /* UtilsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB3F2088AAAE00509094 /* UtilsDatabase.swift */; };
 		668AAB422088AB4A00509094 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB412088AB4A00509094 /* Global.swift */; };
-		668AAB442088AB7100509094 /* LibImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB432088AB7100509094 /* LibImage.swift */; };
 		690BF09FF6A85BC56C66C1CF /* Pods_PNA_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1139228E9DD8FC82B78DFC16 /* Pods_PNA_SwiftUITests.framework */; };
 		A1FB7ED020864C5700024C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7ECF20864C5700024C33 /* AppDelegate.swift */; };
 		A1FB7ED220864C5700024C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7ED120864C5700024C33 /* ViewController.swift */; };
@@ -25,6 +24,10 @@
 		A1FB7EDD20864C5700024C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FB7EDB20864C5700024C33 /* LaunchScreen.storyboard */; };
 		A1FB7EE820864C5700024C33 /* PNA_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EE720864C5700024C33 /* PNA_SwiftTests.swift */; };
 		A1FB7EF320864C5700024C33 /* PNA_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7EF220864C5700024C33 /* PNA_SwiftUITests.swift */; };
+		A1FF5953208B841E00092D63 /* UtilsCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5951208B841D00092D63 /* UtilsCrypto.swift */; };
+		A1FF5954208B841E00092D63 /* UtilsKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF5952208B841E00092D63 /* UtilsKeychain.swift */; };
+		A1FF595C208B8BA500092D63 /* UtilsCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF595B208B8BA400092D63 /* UtilsCoreData.swift */; };
+		A1FF595E208B8EA800092D63 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FF595D208B8EA800092D63 /* DownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +51,12 @@
 		1139228E9DD8FC82B78DFC16 /* Pods_PNA_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNA_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A819B4183579D846D555FC3 /* Pods-PNA-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-SwiftTests/Pods-PNA-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AC79E0DC23C0FF98B1E6B89 /* Pods_PNA_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNA_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		668AAB372088A91400509094 /* LibLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibLog.swift; sourceTree = "<group>"; };
-		668AAB392088A95A00509094 /* LibPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibPlatform.swift; sourceTree = "<group>"; };
+		668AAB372088A91400509094 /* UtilsLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsLog.swift; sourceTree = "<group>"; };
+		668AAB392088A95A00509094 /* UtilsPlatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsPlatform.swift; sourceTree = "<group>"; };
 		668AAB3B2088A9A500509094 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		668AAB3D2088A9FB00509094 /* LibFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibFont.swift; sourceTree = "<group>"; };
-		668AAB3F2088AAAE00509094 /* LibDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibDatabase.swift; sourceTree = "<group>"; };
+		668AAB3D2088A9FB00509094 /* UtilsFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsFont.swift; sourceTree = "<group>"; };
+		668AAB3F2088AAAE00509094 /* UtilsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsDatabase.swift; sourceTree = "<group>"; };
 		668AAB412088AB4A00509094 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		668AAB432088AB7100509094 /* LibImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibImage.swift; sourceTree = "<group>"; };
 		8623D6DA79CE0ED6DC405E39 /* Pods_PNA_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNA_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		888B303AD24F29760D63D449 /* Pods-PNA-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-SwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-SwiftUITests/Pods-PNA-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F76D9D51B2E42D47977BD1E /* Pods-PNA-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-SwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-SwiftUITests/Pods-PNA-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +74,12 @@
 		A1FB7EEE20864C5700024C33 /* PNA-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PNA-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7EF220864C5700024C33 /* PNA_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNA_SwiftUITests.swift; sourceTree = "<group>"; };
 		A1FB7EF420864C5700024C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FF5951208B841D00092D63 /* UtilsCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsCrypto.swift; sourceTree = "<group>"; };
+		A1FF5952208B841E00092D63 /* UtilsKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsKeychain.swift; sourceTree = "<group>"; };
+		A1FF5955208B861000092D63 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A1FF5958208B880400092D63 /* PNA-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PNA-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1FF595B208B8BA400092D63 /* UtilsCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsCoreData.swift; sourceTree = "<group>"; };
+		A1FF595D208B8EA800092D63 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		B31FA5D51079B11C086DF623 /* Pods-PNA-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-Swift/Pods-PNA-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		BB4CEEBFF371F37A578E7999 /* Pods-PNA-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-SwiftTests/Pods-PNA-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDBD7F523F0D4B2AE58CF521 /* Pods-PNA-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-Swift/Pods-PNA-Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -175,11 +183,14 @@
 		A1FB7F0120864CC500024C33 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				668AAB432088AB7100509094 /* LibImage.swift */,
-				668AAB3D2088A9FB00509094 /* LibFont.swift */,
-				668AAB3F2088AAAE00509094 /* LibDatabase.swift */,
-				668AAB392088A95A00509094 /* LibPlatform.swift */,
-				668AAB372088A91400509094 /* LibLog.swift */,
+				A1FF5958208B880400092D63 /* PNA-Swift-Bridging-Header.h */,
+				668AAB3D2088A9FB00509094 /* UtilsFont.swift */,
+				668AAB3F2088AAAE00509094 /* UtilsDatabase.swift */,
+				668AAB392088A95A00509094 /* UtilsPlatform.swift */,
+				A1FF595B208B8BA400092D63 /* UtilsCoreData.swift */,
+				668AAB372088A91400509094 /* UtilsLog.swift */,
+				A1FF5951208B841D00092D63 /* UtilsCrypto.swift */,
+				A1FF5952208B841E00092D63 /* UtilsKeychain.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -203,6 +214,7 @@
 		A1FB7F0420864CDD00024C33 /* Ultility */ = {
 			isa = PBXGroup;
 			children = (
+				A1FF595D208B8EA800092D63 /* DownloadService.swift */,
 				668AAB412088AB4A00509094 /* Global.swift */,
 			);
 			path = Ultility;
@@ -225,6 +237,7 @@
 		C6F1F2B331D31CE25D2CD19F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1FF5955208B861000092D63 /* Security.framework */,
 				668AAB3B2088A9A500509094 /* UserNotifications.framework */,
 				4AC79E0DC23C0FF98B1E6B89 /* Pods_PNA_Swift.framework */,
 				8623D6DA79CE0ED6DC405E39 /* Pods_PNA_SwiftTests.framework */,
@@ -277,8 +290,6 @@
 				A1FB7EDF20864C5700024C33 /* Sources */,
 				A1FB7EE020864C5700024C33 /* Frameworks */,
 				A1FB7EE120864C5700024C33 /* Resources */,
-				89F169D1CA41F1D69D5F7868 /* [CP] Embed Pods Frameworks */,
-				0A9F7A1E600CC37BFD95D917 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,8 +309,6 @@
 				A1FB7EEA20864C5700024C33 /* Sources */,
 				A1FB7EEB20864C5700024C33 /* Frameworks */,
 				A1FB7EEC20864C5700024C33 /* Resources */,
-				68C31AAB400F84C0EB4FF953 /* [CP] Embed Pods Frameworks */,
-				043717831D2A2D050E146FD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +332,7 @@
 				TargetAttributes = {
 					A1FB7ECB20864C5700024C33 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					A1FB7EE220864C5700024C33 = {
@@ -385,36 +395,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		043717831D2A2D050E146FD4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-SwiftUITests/Pods-PNA-SwiftUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0A9F7A1E600CC37BFD95D917 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-SwiftTests/Pods-PNA-SwiftTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		309D485ACFB5249EDC528CFE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +428,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/THLabel/THLabel.framework",
@@ -488,6 +469,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/THLabel.framework",
@@ -527,21 +509,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-Swift/Pods-PNA-Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		68C31AAB400F84C0EB4FF953 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-SwiftUITests/Pods-PNA-SwiftUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7BBBD0F09C90D0DC9F16592E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,21 +525,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		89F169D1CA41F1D69D5F7868 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PNA-SwiftTests/Pods-PNA-SwiftTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D9EC7A22369FCBD14B09E3EA /* [CP] Check Pods Manifest.lock */ = {
@@ -619,13 +571,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				668AAB422088AB4A00509094 /* Global.swift in Sources */,
-				668AAB3E2088A9FB00509094 /* LibFont.swift in Sources */,
-				668AAB442088AB7100509094 /* LibImage.swift in Sources */,
-				668AAB3A2088A95A00509094 /* LibPlatform.swift in Sources */,
-				668AAB382088A91400509094 /* LibLog.swift in Sources */,
+				668AAB3E2088A9FB00509094 /* UtilsFont.swift in Sources */,
+				668AAB3A2088A95A00509094 /* UtilsPlatform.swift in Sources */,
+				A1FF5954208B841E00092D63 /* UtilsKeychain.swift in Sources */,
+				A1FF595C208B8BA500092D63 /* UtilsCoreData.swift in Sources */,
+				668AAB382088A91400509094 /* UtilsLog.swift in Sources */,
 				A1FB7ED220864C5700024C33 /* ViewController.swift in Sources */,
+				A1FF595E208B8EA800092D63 /* DownloadService.swift in Sources */,
 				A1FB7ED820864C5700024C33 /* PNA_Swift.xcdatamodeld in Sources */,
-				668AAB402088AAAF00509094 /* LibDatabase.swift in Sources */,
+				668AAB402088AAAF00509094 /* UtilsDatabase.swift in Sources */,
+				A1FF5953208B841E00092D63 /* UtilsCrypto.swift in Sources */,
 				A1FB7ED020864C5700024C33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,11 +748,14 @@
 			baseConfigurationReference = B31FA5D51079B11C086DF623 /* Pods-PNA-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PNA-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PNA.PNA-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PNA-Swift/Library/PNA-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -808,11 +766,13 @@
 			baseConfigurationReference = BDBD7F523F0D4B2AE58CF521 /* Pods-PNA-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PNA-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PNA.PNA-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PNA-Swift/Library/PNA-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

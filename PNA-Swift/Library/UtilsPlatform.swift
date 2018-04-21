@@ -1,7 +1,7 @@
 import UIKit
-class LibPlatform: NSObject {
-    static let sharedInstance : LibPlatform = {
-        let inst = LibPlatform()
+class UtilsPlatform: NSObject {
+    static let sharedInstance : UtilsPlatform = {
+        let inst = UtilsPlatform()
         return inst
     }()
     func platformModelString() -> String? {

@@ -38,6 +38,7 @@ target 'PNA-Swift' do
   pod 'ESPullToRefresh'
   pod 'HTPullToRefresh'
   pod 'RAMAnimatedTabBarController'
+  pod 'SWRevealViewController'
   
   target 'PNA-SwiftTests' do
     inherit! :search_paths

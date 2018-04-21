@@ -2,7 +2,7 @@ import UIKit
 import SQLCipher
 import SQLite3
 let PASS_SQL: String = "aimabiet123"
-public class LibDatabase: NSObject {
+public class UtilsDatabase: NSObject {
     class func initDatabase() {
         var json = [AnyHashable:Any]()
         if let filePath = Bundle.main.path(forResource: "tables", ofType: "json"),
@@ -16,7 +16,6 @@ public class LibDatabase: NSObject {
             let strDbName: String = (list[i] as AnyObject).value(forKey: "name") as! String
             let strPath = "\(NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0])/Caches/\("au")_\(strDbName)"
             let success: Bool = fileManager.fileExists(atPath: strPath)
-            LibLog.log(self, caption: "strPath", message: strPath)
             if !success {
                 let file: String? = Bundle.main.path(forResource: "milo.db", ofType: nil)
                 if file != nil {
