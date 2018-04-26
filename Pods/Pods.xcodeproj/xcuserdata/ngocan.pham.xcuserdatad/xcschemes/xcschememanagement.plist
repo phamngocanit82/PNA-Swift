@@ -214,6 +214,11 @@
 			<key>orderHint</key>
 			<integer>31</integer>
 		</dict>
+		<key>SWRevealViewController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
 		<key>Socket.IO-Client-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>

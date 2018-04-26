@@ -21,7 +21,7 @@ target 'PNA-Swift' do
   pod 'InstagramKit'
   pod 'XCDYouTubeKit'
   pod 'Alamofire'
-  pod 'DGActivityIndicatorView'
+  pod 'NVActivityIndicatorView'
   pod 'Socket.IO-Client-Swift'
   pod 'TKRubberPageControl'
   pod 'ZoomTransitioning'

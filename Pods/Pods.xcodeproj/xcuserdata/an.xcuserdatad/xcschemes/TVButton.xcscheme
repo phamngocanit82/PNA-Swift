@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9B458471393221DBC2A61A00F6C68FD"
+               BlueprintIdentifier = "91DC3504656D5C95F69316CBB41107D2"
                BlueprintName = "TVButton"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "TVButton.framework">

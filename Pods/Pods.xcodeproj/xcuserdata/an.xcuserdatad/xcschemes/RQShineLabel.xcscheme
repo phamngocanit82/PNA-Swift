@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "432B5C66734525F459A5BCEA595D7217"
+               BlueprintIdentifier = "553A0652139E9418C0615621C18BD8C2"
                BlueprintName = "RQShineLabel"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "RQShineLabel.framework">
