@@ -151,6 +151,11 @@
 			<key>orderHint</key>
 			<integer>21</integer>
 		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
 		<key>Pods-PNA-Swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -217,7 +222,7 @@
 		<key>SWRevealViewController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>42</integer>
+			<integer>43</integer>
 		</dict>
 		<key>Socket.IO-Client-Swift.xcscheme</key>
 		<dict>

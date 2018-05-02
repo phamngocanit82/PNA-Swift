@@ -23,6 +23,15 @@
 		A10E9AAD2092286E0014FB42 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E9AAC2092286E0014FB42 /* CustomView.swift */; };
 		A10E9AAF209228AE0014FB42 /* CustomProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E9AAE209228AE0014FB42 /* CustomProgressView.swift */; };
 		A11587AE2092344D0086A5C5 /* LanguageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11587AD2092344D0086A5C5 /* LanguageService.swift */; };
+		A13DA4C5209A048500A8BFB1 /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4C4209A048500A8BFB1 /* ExampleController.swift */; };
+		A13DA4C7209A04AA00A8BFB1 /* QRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4C6209A04AA00A8BFB1 /* QRCodeController.swift */; };
+		A13DA4C9209A04B900A8BFB1 /* YoutubeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4C8209A04B900A8BFB1 /* YoutubeController.swift */; };
+		A13DA4CB209A04C700A8BFB1 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4CA209A04C700A8BFB1 /* CameraController.swift */; };
+		A13DA4CD209A04D600A8BFB1 /* SocketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4CC209A04D600A8BFB1 /* SocketController.swift */; };
+		A13DA4CF209A04E400A8BFB1 /* FaceBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4CE209A04E400A8BFB1 /* FaceBookController.swift */; };
+		A13DA4D1209A04F300A8BFB1 /* TwitterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4D0209A04F300A8BFB1 /* TwitterController.swift */; };
+		A13DA4D3209A050100A8BFB1 /* InstagramController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4D2209A050100A8BFB1 /* InstagramController.swift */; };
+		A13DA4D5209A051000A8BFB1 /* GoogleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DA4D4209A051000A8BFB1 /* GoogleMapController.swift */; };
 		A16E158220922AD800BB69F2 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16E158120922AD800BB69F2 /* CustomImageView.swift */; };
 		A1FB7ED020864C5700024C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7ECF20864C5700024C33 /* AppDelegate.swift */; };
 		A1FB7ED220864C5700024C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FB7ED120864C5700024C33 /* ViewController.swift */; };
@@ -80,6 +89,15 @@
 		A10E9AAC2092286E0014FB42 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		A10E9AAE209228AE0014FB42 /* CustomProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressView.swift; sourceTree = "<group>"; };
 		A11587AD2092344D0086A5C5 /* LanguageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageService.swift; sourceTree = "<group>"; };
+		A13DA4C4209A048500A8BFB1 /* ExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleController.swift; sourceTree = "<group>"; };
+		A13DA4C6209A04AA00A8BFB1 /* QRCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeController.swift; sourceTree = "<group>"; };
+		A13DA4C8209A04B900A8BFB1 /* YoutubeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeController.swift; sourceTree = "<group>"; };
+		A13DA4CA209A04C700A8BFB1 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		A13DA4CC209A04D600A8BFB1 /* SocketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketController.swift; sourceTree = "<group>"; };
+		A13DA4CE209A04E400A8BFB1 /* FaceBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookController.swift; sourceTree = "<group>"; };
+		A13DA4D0209A04F300A8BFB1 /* TwitterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterController.swift; sourceTree = "<group>"; };
+		A13DA4D2209A050100A8BFB1 /* InstagramController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramController.swift; sourceTree = "<group>"; };
+		A13DA4D4209A051000A8BFB1 /* GoogleMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapController.swift; sourceTree = "<group>"; };
 		A16E158120922AD800BB69F2 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		A1FB7ECC20864C5700024C33 /* PNA-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PNA-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FB7ECF20864C5700024C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +158,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A13DA4C3209A045C00A8BFB1 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				A13DA4C4209A048500A8BFB1 /* ExampleController.swift */,
+				A13DA4C6209A04AA00A8BFB1 /* QRCodeController.swift */,
+				A13DA4C8209A04B900A8BFB1 /* YoutubeController.swift */,
+				A13DA4CA209A04C700A8BFB1 /* CameraController.swift */,
+				A13DA4CC209A04D600A8BFB1 /* SocketController.swift */,
+				A13DA4CE209A04E400A8BFB1 /* FaceBookController.swift */,
+				A13DA4D0209A04F300A8BFB1 /* TwitterController.swift */,
+				A13DA4D2209A050100A8BFB1 /* InstagramController.swift */,
+				A13DA4D4209A051000A8BFB1 /* GoogleMapController.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		A1FB7EC320864C5700024C33 = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +206,6 @@
 				A1FB7F0520864CE700024C33 /* View */,
 				A1FB7F0620864CED00024C33 /* Controller */,
 				A1FB7ECF20864C5700024C33 /* AppDelegate.swift */,
-				A1FB7ED120864C5700024C33 /* ViewController.swift */,
 				A1FB7ED320864C5700024C33 /* Main.storyboard */,
 				A1FB7ED920864C5700024C33 /* Assets.xcassets */,
 				A1FB7EDB20864C5700024C33 /* LaunchScreen.storyboard */,
@@ -261,7 +294,9 @@
 		A1FB7F0620864CED00024C33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A13DA4C3209A045C00A8BFB1 /* Examples */,
 				A1FF595F208B912400092D63 /* PrevViewControllerSegue.swift */,
+				A1FB7ED120864C5700024C33 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -617,18 +652,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13DA4CB209A04C700A8BFB1 /* CameraController.swift in Sources */,
 				668AAB422088AB4A00509094 /* Global.swift in Sources */,
+				A13DA4CF209A04E400A8BFB1 /* FaceBookController.swift in Sources */,
 				A16E158220922AD800BB69F2 /* CustomImageView.swift in Sources */,
 				A10E9AA7209225F60014FB42 /* CustomButton.swift in Sources */,
 				A11587AE2092344D0086A5C5 /* LanguageService.swift in Sources */,
 				668AAB3E2088A9FB00509094 /* UtilsFont.swift in Sources */,
 				A10E9AA5209225A40014FB42 /* CustomSwitch.swift in Sources */,
 				668AAB3A2088A95A00509094 /* UtilsPlatform.swift in Sources */,
+				A13DA4D1209A04F300A8BFB1 /* TwitterController.swift in Sources */,
 				A1FF5954208B841E00092D63 /* UtilsKeychain.swift in Sources */,
+				A13DA4C7209A04AA00A8BFB1 /* QRCodeController.swift in Sources */,
 				A1FF595C208B8BA500092D63 /* UtilsCoreData.swift in Sources */,
 				668AAB382088A91400509094 /* UtilsLog.swift in Sources */,
+				A13DA4C9209A04B900A8BFB1 /* YoutubeController.swift in Sources */,
 				A1FB7ED220864C5700024C33 /* ViewController.swift in Sources */,
 				A1FF5964208B92E200092D63 /* UtilsDateTime.swift in Sources */,
+				A13DA4D3209A050100A8BFB1 /* InstagramController.swift in Sources */,
 				A10E9AAB209227B90014FB42 /* CustomLabel.swift in Sources */,
 				A10E9AA9209227440014FB42 /* CustomThumbView.swift in Sources */,
 				A1FF5960208B912400092D63 /* PrevViewControllerSegue.swift in Sources */,
@@ -636,7 +677,10 @@
 				A1FB7ED820864C5700024C33 /* PNA_Swift.xcdatamodeld in Sources */,
 				A10E9AAF209228AE0014FB42 /* CustomProgressView.swift in Sources */,
 				668AAB402088AAAF00509094 /* UtilsDatabase.swift in Sources */,
+				A13DA4D5209A051000A8BFB1 /* GoogleMapController.swift in Sources */,
 				A1FF5966208B935100092D63 /* UtilsValidation.swift in Sources */,
+				A13DA4C5209A048500A8BFB1 /* ExampleController.swift in Sources */,
+				A13DA4CD209A04D600A8BFB1 /* SocketController.swift in Sources */,
 				A10E9AAD2092286E0014FB42 /* CustomView.swift in Sources */,
 				A1FF5953208B841E00092D63 /* UtilsCrypto.swift in Sources */,
 				A1FF596A208B946B00092D63 /* CustomViewController.swift in Sources */,
