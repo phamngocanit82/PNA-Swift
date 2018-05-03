@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "100061E5F2E279F8D333217A488EB4A3"
+               BlueprintIdentifier = "AD5C94B78C2E6BD5E283A6EE5B680FCB"
                BlueprintName = "ZoomTransitioning"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "ZoomTransitioning.framework">

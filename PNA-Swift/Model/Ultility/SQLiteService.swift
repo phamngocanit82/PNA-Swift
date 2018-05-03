@@ -1,8 +1,7 @@
 import UIKit
 import SQLCipher
 import SQLite3
-let PASS_SQL: String = "aimabiet123"
-public class UtilsDatabase: NSObject {
+public class SQLiteService: NSObject {
     class func initDatabase() {
         var json = [AnyHashable:Any]()
         if let filePath = Bundle.main.path(forResource: "tables", ofType: "json"),
@@ -17,7 +16,7 @@ public class UtilsDatabase: NSObject {
             let strPath = "\(NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0])/Caches/\("au")_\(strDbName)"
             let success: Bool = fileManager.fileExists(atPath: strPath)
             if !success {
-                let file: String? = Bundle.main.path(forResource: "milo.db", ofType: nil)
+                let file: String? = Bundle.main.path(forResource: Global.DATABASE_NAME, ofType: nil)
                 if file != nil {
                     try? FileManager.default.copyItem(atPath: file!, toPath: strPath)
                 }
@@ -38,7 +37,7 @@ public class UtilsDatabase: NSObject {
         let strPath: String = getPathDB(strDbName)
         var database: OpaquePointer? = nil
         if sqlite3_open_v2(strPath, &database, SQLITE_OPEN_CREATE | SQLITE_OPEN_READWRITE | SQLITE_OPEN_FULLMUTEX, nil) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery = "create table if not exists \(strTable)(\(strFields))"
             sqlite3_exec(database, sqlQuery, nil, nil, nil)
             sqlite3_close(database)
@@ -50,7 +49,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery: String = "select count(issued_date) from \(strTable)"
             if sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil) == SQLITE_OK {
                 if sqlite3_step(statement) == SQLITE_ROW {
@@ -69,7 +68,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery: String = "delete from \(strTable)"
             sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil)
             sqlite3_step(statement)
@@ -82,7 +81,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery: String = "delete from \(strTable) where \(contestIdStr)"
             sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil)
             sqlite3_step(statement)
@@ -96,7 +95,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             if sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil) == SQLITE_OK {
                 if sqlite3_step(statement) == SQLITE_ROW {
                     flag = true
@@ -112,7 +111,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery: String = "UPDATE \(strTable) SET content = ? "
             sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil)
             let content = data["content"] as? String
@@ -127,7 +126,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let param = data["param"] as? String
             let sqlQuery = "UPDATE \(strTable) SET content = ? WHERE param='\(String(describing:param))'"
             sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil)
@@ -144,7 +143,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             var sqlQuery: String = "insert into \(strTable)(\(strFields)) "
             let arrString: [Any] = strFields.components(separatedBy: ",")
             var values: String = ""
@@ -177,7 +176,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery: String = "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='\(strTable)'"
             if sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil) == SQLITE_OK {
                 while sqlite3_step(statement) == SQLITE_ROW {
@@ -198,7 +197,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let sqlQuery: String = "select \(strFields) from \(strTable)"
             let arrString: [Any] = strFields.components(separatedBy: ",")
             if sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil) == SQLITE_OK {
@@ -222,7 +221,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             let arrString: [Any] = strFields.components(separatedBy: ",")
             if sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil) == SQLITE_OK {
                 while sqlite3_step(statement) == SQLITE_ROW {
@@ -245,7 +244,7 @@ public class UtilsDatabase: NSObject {
         var database: OpaquePointer? = nil
         var statement: OpaquePointer? = nil
         if sqlite3_open(strPath, &database) == SQLITE_OK {
-            sqlite3_key(database, PASS_SQL, Int32(PASS_SQL.utf8.count))
+            sqlite3_key(database, Global.PASS_SQL, Int32(Global.PASS_SQL.utf8.count))
             if sqlite3_prepare_v2(database, sqlQuery, -1, &statement, nil) == SQLITE_OK {
                 if sqlite3_step(statement) == SQLITE_ROW {
                     strData = String(cString:(sqlite3_column_text(statement, 0)))

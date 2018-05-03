@@ -24,4 +24,7 @@ struct Global {
     static let DEFAULT_LOAD_IMAGE = "default_image.png"
     static let LOAD_IMAGE_BACKGROUND_COLOR = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
     static let LOAD_IMAGE_ACTIVITY_INDICATOR_COLOR = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+    
+    static let DATABASE_NAME = "PNA.db"
+    static let PASS_SQL = "aimabiet123"
 }

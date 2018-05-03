@@ -49,15 +49,15 @@ extension UIImageView {
             })
         }).resume()
     }
-    func setImageURL(_ imageView: UIImageView,_ url: String) {
-        addAnimation(imageView)
+    func setImageURL(_ url: String) {
+        addAnimation(self)
         let sdDownloader = SDWebImageDownloader.shared()
         sdDownloader.username = Global.AUTH_USERNAME
         sdDownloader.password = Global.AUTH_PASS
         let encodeUrl: String! = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-        imageView.sd_setImage(with: NSURL(string: encodeUrl)! as URL, placeholderImage: UIImage(named: Global.DEFAULT_LOAD_IMAGE), options: .refreshCached, progress: {receivedSize, expectedSize, targetURL in
+        self.sd_setImage(with: NSURL(string: encodeUrl)! as URL, placeholderImage: UIImage(named: Global.DEFAULT_LOAD_IMAGE), options: .refreshCached, progress: {receivedSize, expectedSize, targetURL in
         }, completed: { image, error, cacheType, imageURL in
-            self.removeAnimation(imageView)
+            self.removeAnimation(self)
         })
     }
     func addAnimation(_ object: NSObject) {
