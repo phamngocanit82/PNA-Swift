@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A25A94185ABB4268F0F4415D8E8F5D68"
+               BlueprintIdentifier = "508BB076B6DC94E382BF82727BDE8DBA"
                BlueprintName = "TKRubberPageControl"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "TKRubberPageControl.framework">

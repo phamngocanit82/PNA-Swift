@@ -938,6 +938,10 @@ Copyright 2016 Google
 
 Copyright 2017 Google
 
+## GooglePlaces
+
+Copyright 2017 Google
+
 ## GoogleSignIn
 
 Copyright 2018 Google
@@ -2239,6 +2243,14 @@ The views and conclusions contained in the software and documentation are those 
 authors and should not be interpreted as representing official policies, either expressed
 or implied, of Jonathan Wight.
 
+
+## TwitterCore
+
+Copyright Twitter, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Twitter Kit Agreement located at https://dev.twitter.com/overview/terms/twitterkit and the Developer Agreement located at https://dev.twitter.com/overview/terms/agreement. OSS: https://github.com/twitter/twitter-kit-ios/blob/master/OS_LICENSES.md
+
+## TwitterKit
+
+Twitter Kit: Copyright Twitter, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Twitter Kit Agreement located at https://dev.twitter.com/overview/terms/twitterkit and the Developer Agreement located at https://dev.twitter.com/overview/terms/agreement. OSS: https://github.com/twitter/twitter-kit-ios/blob/master/OS_LICENSES.md
 
 ## XCDYouTubeKit
 

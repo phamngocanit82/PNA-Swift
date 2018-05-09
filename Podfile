@@ -15,6 +15,7 @@ target 'PNA-Swift' do
   pod 'GoogleTagManager'
   pod 'GoogleSignIn'
   pod 'GoogleMaps'
+  pod 'GooglePlaces'
   pod 'NSHash'
   pod 'FacebookCore'
   pod 'FacebookLogin'
@@ -39,6 +40,8 @@ target 'PNA-Swift' do
   pod 'HTPullToRefresh'
   pod 'RAMAnimatedTabBarController'
   pod 'SWRevealViewController'
+  pod 'TwitterCore'
+  pod 'TwitterKit'
   
   target 'PNA-SwiftTests' do
     inherit! :search_paths

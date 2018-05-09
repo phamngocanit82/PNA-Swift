@@ -7,6 +7,7 @@ struct Global {
     static let BORDER_IMAGEVIEW_COLOR = #colorLiteral(red: 0.07450980392, green: 0.07450980392, blue: 0.07450980392, alpha: 1)
     
     static let FONT_NAME_NORMAL = "arial"
+    static let FONT_SIZE_NORMAL:CGFloat = 13
     
     static let LANGUAGE_PREFIX = "en:"
     static let LANG_FILE_NAME = ""
@@ -27,4 +28,6 @@ struct Global {
     
     static let DATABASE_NAME = "PNA.db"
     static let PASS_SQL = "aimabiet123"
+    static let MAP_LATITUDE = 10.783000716441
+    static let MAP_LONGITUDE = 106.6972613435
 }

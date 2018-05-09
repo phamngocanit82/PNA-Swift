@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ACAAED64D84A0EAB9D5AE5AE9511FA61"
+               BlueprintIdentifier = "568AE618D26AF979CF8DA1525387A441"
                BlueprintName = "TouchJSON"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "TouchJSON.framework">

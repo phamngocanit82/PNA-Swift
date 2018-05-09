@@ -10,14 +10,19 @@ import UIKit
 import CoreData
 import UserNotifications
 import FBSDKCoreKit
+import GooglePlaces
+import TwitterKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var consumer_key: String = ""
+    var consumer_secret: String = ""
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyDg2tlPcoqxx2Q2rfjhsAKS-9j0n3JA_a4")
+        self.initTwitter()
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
@@ -47,7 +52,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
-    
+    func initTwitter(){
+        if let url = Bundle.main.url(forResource:"twitter", withExtension: "plist") {
+            do {
+                let data = try Data(contentsOf:url)
+                let swiftDictionary = try PropertyListSerialization.propertyList(from: data, options: [], format: nil) as! [String:Any]
+                consumer_key = swiftDictionary["consumer_key"] as! String
+                consumer_secret = swiftDictionary["consumer_secret"] as! String
+            } catch {
+            }
+        }
+        TWTRTwitter.sharedInstance().start(withConsumerKey:consumer_key, consumerSecret:consumer_secret)
+    }
     func registerNotification() {
         if #available(iOS 10.0, *) {
             UNUserNotificationCenter.current().delegate = self

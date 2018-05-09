@@ -46,10 +46,10 @@ PODS:
   - FirebaseAnalytics (4.2.0):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - nanopb (~> 0.3)
   - FirebaseCore (4.0.20):
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
   - FirebaseMessaging (2.2.0):
@@ -66,9 +66,11 @@ PODS:
   - GoogleMaps/Base (2.6.0)
   - GoogleMaps/Maps (2.6.0):
     - GoogleMaps/Base
+  - GooglePlaces (2.6.0):
+    - GoogleMaps/Base (= 2.6.0)
   - GoogleSignIn (4.1.2):
-    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
-    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
     - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
   - GoogleSymbolUtilities (1.1.2)
@@ -81,13 +83,13 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/Logger (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3):
     - GoogleToolboxForMac/DebugUtils (= 2.1.3)
     - GoogleToolboxForMac/Defines (= 2.1.3)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.1.3)"
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GoogleUtilities (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GTMOAuth2 (1.1.6):
@@ -136,6 +138,9 @@ PODS:
   - TOMSMorphingLabel (0.5.1)
   - TouchJSON (1.1)
   - TVButton (1.0.0)
+  - TwitterCore (3.1.0)
+  - TwitterKit (3.3.0):
+    - TwitterCore (>= 3.1.0)
   - XCDYouTubeKit (2.5.6)
   - ZoomTransitioning (1.4.1)
 
@@ -151,6 +156,7 @@ DEPENDENCIES:
   - FloatRatingView
   - GDataXML-HTML
   - GoogleMaps
+  - GooglePlaces
   - GoogleSignIn
   - GoogleTagManager
   - HTPullToRefresh
@@ -172,62 +178,10 @@ DEPENDENCIES:
   - TOMSMorphingLabel
   - TouchJSON
   - TVButton
+  - TwitterCore
+  - TwitterKit
   - XCDYouTubeKit
   - ZoomTransitioning
-
-SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - AESCrypt
-    - AFNetworking
-    - Alamofire
-    - Bolts
-    - CircleMenu
-    - ESPullToRefresh
-    - FacebookCore
-    - FacebookLogin
-    - FAPanels
-    - FBSDKCoreKit
-    - FBSDKLoginKit
-    - Firebase
-    - FirebaseAnalytics
-    - FirebaseCore
-    - FirebaseInstanceID
-    - FirebaseMessaging
-    - FloatRatingView
-    - GDataXML-HTML
-    - GoogleAnalytics
-    - GoogleMaps
-    - GoogleSignIn
-    - GoogleSymbolUtilities
-    - GoogleTagManager
-    - GoogleToolboxForMac
-    - GoogleUtilities
-    - GTMOAuth2
-    - GTMSessionFetcher
-    - HTPullToRefresh
-    - InstagramKit
-    - KDCalendar
-    - LTMorphingLabel
-    - nanopb
-    - NSHash
-    - NVActivityIndicatorView
-    - Protobuf
-    - RAMAnimatedTabBarController
-    - RQShineLabel
-    - SDWebImage
-    - Socket.IO-Client-Swift
-    - SQLCipher
-    - SSZipArchive
-    - Starscream
-    - SWRevealViewController
-    - THLabel
-    - TKRubberPageControl
-    - Toast-Swift
-    - TOMSMorphingLabel
-    - TouchJSON
-    - TVButton
-    - XCDYouTubeKit
-    - ZoomTransitioning
 
 SPEC CHECKSUMS:
   AESCrypt: 1d89bf8b0789cf274ab2205ea461adbe9321d5f8
@@ -250,6 +204,7 @@ SPEC CHECKSUMS:
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleMaps: 42f91c68b7fa2f84d5c86597b18ceb99f5414c7f
+  GooglePlaces: f6ddf33b75cef69e888907d9947c57198ed845f3
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleTagManager: 07acea48abe73aac17550b81bbf52a37db2d7dd6
@@ -279,9 +234,11 @@ SPEC CHECKSUMS:
   TOMSMorphingLabel: 3e88a2bf5257f8993ebc51fb3109187a0bfb2c4d
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
   TVButton: 4eb73ebb4a3a7e3fd506da9c69497feeeb847051
+  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
+  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
   XCDYouTubeKit: dccfe0c17dd5c5187969ec27e93069573badb08f
   ZoomTransitioning: 42d9ad29c83d896f3fe28c324a4fe98ac821f0dd
 
-PODFILE CHECKSUM: 2ae55459da83072d8d2dc0a6c94b0494ced1dcfe
+PODFILE CHECKSUM: 02ac4671a6f906b5cb3f96bc62fc567a45173e90
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.4.0

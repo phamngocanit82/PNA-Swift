@@ -138,8 +138,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KoF-cA-f5d">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KoF-cA-f5d">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cas-1g-nrD" id="kZ3-Xh-UPC"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3e-7h-Qdq">
                                 <rect key="frame" x="10" y="10" width="44" height="44"/>
@@ -163,6 +166,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="f3h-hI-kov"/>
                     <connections>
+                        <outlet property="mapView" destination="KoF-cA-f5d" id="4YU-7P-vah"/>
                         <outlet property="menuButton" destination="f3e-7h-Qdq" id="5BD-av-KFR"/>
                     </connections>
                 </viewController>
