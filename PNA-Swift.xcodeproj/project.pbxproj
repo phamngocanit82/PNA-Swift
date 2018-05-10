@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A22D0AEF429859B18BA37A4 /* Pods_PNA_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC79E0DC23C0FF98B1E6B89 /* Pods_PNA_Swift.framework */; };
 		486BBA24D9FA255EBA453AC8 /* Pods_PNA_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8623D6DA79CE0ED6DC405E39 /* Pods_PNA_SwiftTests.framework */; };
+		665A477920A4585B0057CA2D /* UtilsInstagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665A477820A4585B0057CA2D /* UtilsInstagram.swift */; };
 		666F3AFE20A05CCC001E761A /* CustomMapKitAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666F3AFD20A05CCC001E761A /* CustomMapKitAnnotationView.swift */; };
 		666F3B0020A0629B001E761A /* CustomMapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666F3AFF20A0629B001E761A /* CustomMapkit.swift */; };
 		668AAB382088A91400509094 /* UtilsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668AAB372088A91400509094 /* UtilsLog.swift */; };
@@ -88,6 +89,7 @@
 		1139228E9DD8FC82B78DFC16 /* Pods_PNA_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNA_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A819B4183579D846D555FC3 /* Pods-PNA-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PNA-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PNA-SwiftTests/Pods-PNA-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		4AC79E0DC23C0FF98B1E6B89 /* Pods_PNA_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PNA_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		665A477820A4585B0057CA2D /* UtilsInstagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsInstagram.swift; sourceTree = "<group>"; };
 		666F3AFD20A05CCC001E761A /* CustomMapKitAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapKitAnnotationView.swift; sourceTree = "<group>"; };
 		666F3AFF20A0629B001E761A /* CustomMapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapkit.swift; sourceTree = "<group>"; };
 		668AAB372088A91400509094 /* UtilsLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsLog.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				668AAB372088A91400509094 /* UtilsLog.swift */,
 				A1FF5951208B841D00092D63 /* UtilsCrypto.swift */,
 				A1FF5952208B841E00092D63 /* UtilsKeychain.swift */,
+				665A477820A4585B0057CA2D /* UtilsInstagram.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -813,6 +816,7 @@
 				A1FF595E208B8EA800092D63 /* DownloadService.swift in Sources */,
 				A1FB7ED820864C5700024C33 /* PNA_Swift.xcdatamodeld in Sources */,
 				A10E9AAF209228AE0014FB42 /* CustomProgressView.swift in Sources */,
+				665A477920A4585B0057CA2D /* UtilsInstagram.swift in Sources */,
 				668AAB402088AAAF00509094 /* SQLiteService.swift in Sources */,
 				A13DA4D5209A051000A8BFB1 /* GoogleMapController.swift in Sources */,
 				A1FF5966208B935100092D63 /* UtilsValidation.swift in Sources */,

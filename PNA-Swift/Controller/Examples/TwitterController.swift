@@ -8,26 +8,12 @@
 
 import UIKit
 import TwitterKit
-@objc protocol TwitterControllerDelegate {
-    func login(viewController: TwitterController, didAuthWith session: TWTRSession)
-    func loginDidClearAccounts(viewController: TwitterController)
-}
-class TwitterController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    var tweets: [TWTRTweet] = [] {
-        didSet {
-            tableView.reloadData()
-        }
-    }
-    var prototypeCell: TWTRTweetTableViewCell?
-    var isLoadingTweets = false
-    
+class TwitterController: UIViewController, TWTRComposerViewControllerDelegate {
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
-        self.prototypeCell = TWTRTweetTableViewCell(style: .default, reuseIdentifier: "TweetCell")
-        self.tableView.register(TWTRTweetTableViewCell.self, forCellReuseIdentifier: "TweetCell")
-        loadTweets()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,53 +33,43 @@ class TwitterController: UIViewController {
     @IBAction func actionLogin(_ sender: Any){
         TWTRTwitter.sharedInstance().logIn { [weak self] (session, error) in
             if let error = error, let weakSelf = self {
-              
             } else if let session = session, let weakSelf = self {
-                print(session)
-            }
-        }
-    }
-    func loadTweets() {
-        if self.isLoadingTweets {
-            return
-        }
-        self.isLoadingTweets = true
-        let tweetIDs = ["20","266031293945503744", "440322224407314432"];
-        let client = TWTRAPIClient()
-        client.loadTweets(withIDs: tweetIDs) { (twttrs, error) -> Void in
-            if ((twttrs) != nil) {
-                for i in twttrs! {
-                    self.tweets.append(i as TWTRTweet)
+                let client = TWTRAPIClient.withCurrentUser()
+                client.requestEmail { email, error in
+                    self?.nameLabel.text = session.userName
+                    if (email != nil) {
+                        self?.emailLabel.text = email
+                    } else {
+                        self?.emailLabel.text = "This user does not have an email address"
+                    }
                 }
-            } else {
-                print(error as Any)
+                //self?.shareTwitter()
+                self?.getUser(session.userID)
             }
         }
     }
-}
-extension TwitterController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tweets.count
+    func shareTwitter(){
+        if (TWTRTwitter.sharedInstance().sessionStore.hasLoggedInUsers()) {
+            let composer = TWTRComposerViewController.init(initialText: "UK flag picture will be tweeted", image: UIImage.init(named: "usa"), videoURL: nil)
+            composer.delegate = self
+            present(composer, animated: true, completion: nil)
+        }
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TweetCell", for: indexPath) as! TWTRTweetTableViewCell
-        cell.tweetView.delegate = self
-        let tweet = tweets[indexPath.row]
-        cell.configure(with: tweet)
-        return cell
+    func getUser(_ userId:String){
+        let client = TWTRAPIClient()
+        client.loadUser(withID: userId) { (user, error) -> Void in
+            self.imgView.setImageURL((user?.profileImageURL)!)
+        }
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let tweet = self.tweets[indexPath.row]
-        self.prototypeCell?.configure(with: tweet)
-        return TWTRTweetTableViewCell.height(for: tweet, style: TWTRTweetViewStyle.compact, width: self.view.bounds.width, showingActions: false)
+    
+    func composerDidCancel(_ controller: TWTRComposerViewController) {
+        print("composerDidCancel, composer cancelled tweet")
     }
-}
-extension TwitterController: TWTRTweetViewDelegate{
-    func tweetView(_ tweetView: TWTRTweetView!, didSelect tweet: TWTRTweet!) {
-        let webViewController = UIViewController()
-        let webView = UIWebView(frame: webViewController.view.bounds)
-        webView.loadRequest(URLRequest(url: tweet.permalink))
-        webViewController.view = webView
-        self.navigationController?.pushViewController(webViewController, animated: true)
+    func composerDidSucceed(_ controller: TWTRComposerViewController, with tweet: TWTRTweet) {
+        print("composerDidSucceed tweet published")
+    }
+    func composerDidFail(_ controller: TWTRComposerViewController, withError error: Error) {
+        print("composerDidFail, tweet publish failed == \(error.localizedDescription)")
     }
 }
+

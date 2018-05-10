@@ -1,5 +1,14 @@
 import Foundation
 import UIKit
+struct INSTAGRAM_IDS {
+    static let INSTAGRAM_AUTHURL = "https://api.instagram.com/oauth/authorize/"
+    static let INSTAGRAM_APIURl  = "https://api.instagram.com/v1/users/self/?access_token="
+    static let INSTAGRAM_CLIENT_ID  = "97cf5d4c35314559972c3e6e8c98c349"
+    static let INSTAGRAM_CLIENTSERCRET = "530847243f75472b9d802b5d5efdba95"
+    static let INSTAGRAM_REDIRECT_URI = "https://mycafebo.nescafe.com"
+    static let INSTAGRAM_ACCESS_TOKEN =  "access_token"
+    static let INSTAGRAM_SCOPE = "likes+comments+relationships"
+}
 struct Global {
     static let BORDER_BUTTON_COLOR = #colorLiteral(red: 0.07450980392, green: 0.07450980392, blue: 0.07450980392, alpha: 1)
     static let BORDER_LABEL_COLOR = #colorLiteral(red: 0.07450980392, green: 0.07450980392, blue: 0.07450980392, alpha: 1)
@@ -26,8 +35,12 @@ struct Global {
     static let LOAD_IMAGE_BACKGROUND_COLOR = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
     static let LOAD_IMAGE_ACTIVITY_INDICATOR_COLOR = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
     
+    static let GOOGLE_MAP = "AIzaSyDg2tlPcoqxx2Q2rfjhsAKS-9j0n3JA_a4"
     static let DATABASE_NAME = "PNA.db"
     static let PASS_SQL = "aimabiet123"
     static let MAP_LATITUDE = 10.783000716441
     static let MAP_LONGITUDE = 106.6972613435
+    
+    static let INSTAGRAM_URL = "www.instagram.com"
+    static let INSTAGRAM_URL_API = "api.instagram.com"
 }
