@@ -3,4 +3,4 @@
 //
 
 #import <CommonCrypto/CommonCrypto.h>
-
+#import "BiometricAuthentication.h"

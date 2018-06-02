@@ -12,6 +12,12 @@ class ExampleController: ViewController {
     @IBOutlet weak var menuButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let transition: CATransition = CATransition()
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFade
+        self.view.layer.add(transition, forKey: nil)
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

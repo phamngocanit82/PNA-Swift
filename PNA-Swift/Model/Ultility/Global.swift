@@ -28,6 +28,19 @@ struct Global {
     static let NETWORK_METHOD_PUT = 2
     static let NETWORK_METHOD_DELETE = 3
     
+    static let RETURN_CODE_BAD_REQ = 400
+    static let RETURN_CODE_BAD_FOR = 403
+    static let RETURN_CODE_NOT_ACCEPT = 206
+    static let RETURN_CODE_SUCCESS = 200
+    static let RETURN_CODE_LOCKED = 423
+    static let RETURN_CODE_EXPIRE_TOKEN = 401
+    
+    static let API_CODE_SUCCESS = 0
+    static let API_CODE_EXPIRE = 1
+    static let API_CODE_BAD_REQ = 2
+    static let API_CODE_ERROR = 3
+    static let API_CODE_NO_NETWORK = 4
+    
     static let AUTH_USERNAME = "username"
     static let AUTH_PASS = "pass"
     
@@ -43,4 +56,6 @@ struct Global {
     
     static let INSTAGRAM_URL = "www.instagram.com"
     static let INSTAGRAM_URL_API = "api.instagram.com"
+    
+    
 }
